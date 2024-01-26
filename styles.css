@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+
+body {
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    background-image: url(/DIENTES\ CORTADOS/fondobannerlogin.png);
+    background-size: contain;
+    font-family: 'Inter', sans-serif;
+}
+
+#logo {
+
+    width: 20%;
+    height: 20%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin: auto;
+    margin-right: 0;
+    margin-left: 5%;
+}
+
+.DientesContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 30vw;
+    margin: auto;
+    margin-top: 0%;
+    min-width: fit-content;
+    border: 10px solid #05a69e4d;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+/*Estilos de los mensajes de alerta*/
+.Alerta {
+
+    display: flex;
+    opacity: 0;
+
+
+    background-color: #05a69e00;
+    color: #05a69e;
+
+    text-align: center;
+    font-size: 25px;
+    transition: all 1s ease-in-out;
+    width: fit-content;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.Alerta.activated {
+
+    opacity: 1;
+
+    padding: 1% 1% 1%;
+    border-radius: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: all 1s ease-in-out;
+    background-color: rgb(255, 233, 235);
+
+    color: #7c7c7c;
+}
+
+
+
+
+
+
+.row1 {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    border-bottom: solid 1px #7a7a7a6b;
+}
+
+.row2 {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin-left: 0.5%;
+}
+
+.diente {
+    display: flex;
+    margin-left: 10px;
+
+
+    border: 1px solid #ffffff;
+    border-radius: 25%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.row1 img {
+    margin-left: 10px;
+    width: 5vw;
+    height: auto;
+    cursor: pointer;
+
+    padding: 0px 2px 0px;
+
+}
+
+.row2 img {
+    padding: 0px 2px 0px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 5vw;
+    height: auto;
+
+}
+
+.selected {
+
+    border: 1px solid #070707;
+    border-radius: 10%;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+
+.point {
+    width: 10px;
+    height: 10px;
+    background-color: #2099931f;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.buttonsContainer {
+    display: flex;
+
+    width: 90%;
+    justify-content: center;
+    /* Centra verticalmente los elementos en el eje principal */
+    margin-top: 5%;
+
+    align-items: center;
+    /* Centra horizontalmente los elementos en el eje transversal */
+    height: fit-content;
+}
+
+.buttonsContainer img,
+.buttonsContainer input,
+.buttonsContainer button {
+    margin-bottom: 10px;
+    /* Ajusta según tus necesidades */
+    margin-left: 20px;
+}
+
+.button {
+    padding: 10px 5px 10px;
+    background-color: rgb(255, 233, 235);
+
+    color: #7c7c7c;
+    text-transform: uppercase;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    height: fit-content;
+    border-left: 2px solid #7a7a7a8e;  
+    border-top: 2px solid #7a7a7a8e;    
+    border-bottom: 2px solid #7a7a7a8e;  
+    border-right: 2px solid #7a7a7a8e;  
+    font-weight: 900;
+    z-index: 1000000000000;
+}
+
+.button:hover {
+    border-left: 2px solid #7a7a7a8e;  
+    border-top: 2px solid #7a7a7a8e;  
+    border-bottom: 2px solid #7a7a7a71;
+    border-right: 2px solid #7a7a7a6b;
+    background-color: rgb(5, 166, 158);
+    color: #f2f2f2f2;
+    transition: all 0.5s ease-in-out;
+}
+
+input {
+    font-family: 'Inter', sans-serif;
+    height: 1.5vw;
+    outline: none;
+    font-size: 20px;
+    width: 3vw;
+    text-align: center;
+    border-radius: 10px;
+}
+
+input:focus {
+    border: 2px solid  rgb(255, 181, 187);
+    border-radius: 10px;
+
+}
+
+
+.direccional1{
+    position: fixed;
+    margin-top: 15%;
+margin-left: 8%;
+font-family: 'Inter', sans-serif;
+font-size: large;
+color: #7c7c7c;
+font-weight: 900;
+
+
+transition: all 1s ease-in-out;
+}
+.direccional2{
+    position: fixed;
+margin-top: 15%;
+margin-left: 90%;
+font-family: 'Inter', sans-serif;
+font-size: large;
+color: #7c7c7c;
+font-weight: 900;
+
+transition: all 1s ease-in-out;
+}
+
+.numeros{
+
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: #ff0000;
+
+}
+
+.numeracion{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #3d3d3dcc;
+    font-weight: 500;
+    
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wonders Renderer</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div style="display: flex;">
+    <img id='logo' src="/DIENTES CORTADOS/WONDERSBLANCO.png">
+    <div style="display: flex; flex-direction: column; height: 20%;">
+
+
+      <div class="buttonsContainer">
+
+
+        <button class="button" id="seleccionar">Seleccionar Dientes</button>
+        <button class="button" id="atache">PONER ATACHES</button>
+        <button class="button" id="remover">REMOVER</button>
+        <button class="button" id="strip">STRIP</button>
+        <input id="valorStrip"> </input>
+        <button class="button" style="font-style: italic;"  id="reset">REINICIAR</button>
+        <button class="button" style="font-style: italic;" id="export">EXPORT</button>
+      </div>
+
+
+
+    </div>
+  </div>
+
+<div style="display: flex;flex-direction: column;">
+  <div style="display: flex;" id="canvasContainer">
+    <div class="direccional1" id="derecha">DER.</div>
+
+    <div class="DientesContainer"  id="dientesContainer">
+ 
+      
+      <div class="row1">
+       
+        <img src="/DIENTES CORTADOS/diente1-removebg-preview.png" class="diente" label="1" crossorigin>
+        <img src="/DIENTES CORTADOS/diente2-removebg-preview.png" class="diente" label="2" crossorigin>
+        <img src="/DIENTES CORTADOS/diente3-removebg-preview.png" class="diente" label="3" crossorigin="anonymous">
+        <img src="/DIENTES CORTADOS/diente4-removebg-preview.png" class="diente" label="4" crossorigin="anonymous">
+        <img src="/DIENTES CORTADOS/diente5-removebg-preview.png" class="diente" label="5" crossorigin="anonymous">
+        <img src="/DIENTES CORTADOS/diente6-removebg-preview.png" class="diente" label="6" crossorigin="anonymous">
+        <img src="/DIENTES CORTADOS/diente7-removebg-preview.png" class="diente" label="7">
+        <img src="/DIENTES CORTADOS/diente8-removebg-preview.png" class="diente" label="8">
+        <img src="/DIENTES CORTADOS/diente9-removebg-preview.png" class="diente" label="9">
+        <img src="/DIENTES CORTADOS/diente10-removebg-preview.png" class="diente" label="10">
+        <img src="/DIENTES CORTADOS/diente11-removebg-preview.png" class="diente" label="11">
+        <img src="/DIENTES CORTADOS/diente12-removebg-preview.png" class="diente" label="12">
+        <img src="/DIENTES CORTADOS/diente13-removebg-preview.png" class="diente" label="13">
+        <img src="/DIENTES CORTADOS/diente14-removebg-preview.png" class="diente" label="14">
+        <img src="/DIENTES CORTADOS/diente15-removebg-preview.png" class="diente" label="15">
+        <img src="/DIENTES CORTADOS/diente16-removebg-preview.png" class="diente" label="16">
+     
+
+
+      </div>
+      <div class="row2">
+        <img src="/DIENTES CORTADOS/diente17-removebg-preview.png" class=" diente " label="17">
+        <img src="/DIENTES CORTADOS/diente18-removebg-preview.png" class="diente " label="18">
+        <img src="/DIENTES CORTADOS/diente19-removebg-preview.png" class="diente " label="19">
+        <img src="/DIENTES CORTADOS/diente20-removebg-preview.png" class="diente " label="20">
+        <img src="/DIENTES CORTADOS/diente21-removebg-preview.png" class="diente " label="21">
+        <img src="/DIENTES CORTADOS/diente22-removebg-preview.png" class="diente " label="22">
+        <img src="/DIENTES CORTADOS/diente23-removebg-preview.png" class="diente " label="23">
+        <img src="/DIENTES CORTADOS/diente24-removebg-preview.png" class="diente " label="24">
+        <img src="/DIENTES CORTADOS/diente25-removebg-preview.png" class="diente " label="25">
+        <img src="/DIENTES CORTADOS/diente26-removebg-preview.png" class="diente " label="26">
+        <img src="/DIENTES CORTADOS/diente27-removebg-preview.png" class="diente " label="27">
+        <img src="/DIENTES CORTADOS/diente28-removebg-preview.png" class="diente " label="28">
+        <img src="/DIENTES CORTADOS/diente29-removebg-preview.png" class="diente " label="29">
+        <img src="/DIENTES CORTADOS/diente30-removebg-preview.png" class="diente " label="30">
+        <img src="/DIENTES CORTADOS/diente31-removebg-preview.png" class="diente " label="31">
+        <img src="/DIENTES CORTADOS/diente32-removebg-preview.png" class="diente " label="32">
+
+
+      </div>
+
+
+
+    </div>
+    <div class="direccional2" id="izquierda">IZQ.</div>
+
+  </div>
+  <div class="Alerta" id="Alerta"> DIENTES SELECCIONADOS CON EXITO</div>
+  <!-- Agrega este elemento canvas al final del cuerpo del HTML -->
+</div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+</html>
