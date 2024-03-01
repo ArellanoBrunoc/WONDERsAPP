@@ -409,15 +409,16 @@ class ManejadorDientes {
                 if(label==13 ){
 
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA5.png';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
                 }
                 if(label == 10){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA47.png';
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-11) + 'px';
                 }else if (label == 12){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA5.png';
-
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
                 }else {
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-11) + 'px';
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA4567.png';
                 }
 
