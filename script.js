@@ -321,7 +321,7 @@ class ManejadorDientes {
 
   añadirAtacheORemover(accion) {
     const medidasDientes = [0,31,29,32,38.5,32,27,32,15,15,32,27,32,38.5,32,29,31];
-    const medidasDientes2 = [0,34,30, 37, 29, 29, 29, 30,32.5,32.5,30,29,29,29,35,30,34];
+    const medidasDientes2 = [0,34,30, 37, 29, 29, 29, 30,31,31,30,29,29,29,35,30,34];
       
     const canvasContainer = document.getElementById('canvasContainer');
 
@@ -546,8 +546,8 @@ class ManejadorDientes {
 
               }
               if ( label== 24 || label == 25){
-                nuevaImagen.style.height = '17.5px';
-                nuevaImagen.style.width = '35px';
+                nuevaImagen.style.height = '16px';
+                nuevaImagen.style.width = '32px';
               }
 
 
