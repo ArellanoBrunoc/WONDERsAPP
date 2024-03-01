@@ -388,8 +388,8 @@ class ManejadorDientes {
 
         }
         nuevaImagen.style.position = 'absolute';
-        nuevaImagen.style.left = puntoCentralX + 'px';
-        nuevaImagen.style.top = puntoCentralY + 'px';
+        nuevaImagen.style.left = puntoCentralX + dimensiones.width / 2.5 + 'px';
+        nuevaImagen.style.top = puntoCentralY + dimensiones.height + 'px';
         nuevaImagen.style.cursor = 'pointer';
         nuevaImagen.style.width = dimensiones.width;
         nuevaImagen.style.height = dimensiones.height/2;
