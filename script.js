@@ -132,13 +132,16 @@ class ManejadorDientes {
   apuntarLineasYNumeros() {
     const lineas = document.querySelectorAll('.linea');
     const numeros = document.querySelectorAll('.numeros');
+    const botones = document.querySelectorAll('.vestibular');
     lineas.forEach(linea => {
       linea.addEventListener('click', (event) => this.eliminacionLineasYNumeros(event));
     });
     numeros.forEach(numero => {
       numero.addEventListener('click', (event) => this.eliminacionLineasYNumeros(event));
     });
-
+    botones.forEach(boton => {
+      boton.addEventListener('click', (event) => this.eliminacionLineasYNumeros(event));
+    });
 
   }
 
@@ -317,7 +320,7 @@ class ManejadorDientes {
   }
 
   añadirAtacheORemover(accion) {
-    const medidasDientes = [0,31,29,32,33,27,21,23,15];
+    const medidasDientes = [0,31,29,32,37,30,23,25,15];
     const canvasContainer = document.getElementById('canvasContainer');
 
     console.log(this.arraySeleccionado + "para ataches");
@@ -382,7 +385,7 @@ class ManejadorDientes {
         if (label <= 16 ){
           nuevaImagen.style.position = 'absolute';
             if(label == 4 || label == 5 || label == 6 || label == 7){
-              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
 
                 if(label==4){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA5.png';
