@@ -407,7 +407,7 @@ class ManejadorDientes {
 
               nuevaImagen.style.width = '40px';
 
-              if (label == 4 || lavel == 7){
+              if (label == 4 || label == 7){
                 nuevaImagen.style.height = '10px';
 
               }else {
