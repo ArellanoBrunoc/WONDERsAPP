@@ -365,6 +365,26 @@ class ManejadorDientes {
       });
 
     }else if(accion == "botonvestibular"){
+      this.arraySeleccionado.forEach((label) => {
+        var nuevaImagen = document.createElement('img');
+        nuevaImagen.classList.add('vestibular');
+        var selector = '.diente[label="' + label + '"]';
+        var diente = document.querySelector(selector);
+
+        var rectangulos = diente.getClientRects();
+        var dimensiones = diente.getBoundingClientRect();
+        var puntoCentralX = rectangulos[0].left;
+        var puntoCentralY = rectangulos[0].top;
+        nuevaImagen.src = '/DIENTES CORTADOS/BOTONW.png';
+        nuevaImagen.style.position = 'absolute';
+        nuevaImagen.style.left = puntoCentralX + dimensiones.width / 2.5 + 'px';
+        nuevaImagen.style.top = puntoCentralY + dimensiones.height / 2.5 + 'px';
+        nuevaImagen.style.cursor = 'pointer';
+        nuevaImagen.style.width = '20px';
+        nuevaImagen.style.height = '20px';
+        canvasContainer.appendChild(nuevaImagen);
+        this.enviarMensajeAUsuario('BOTON AÑADIDO CON EXITO');
+      });
 
 
 
