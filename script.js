@@ -473,7 +473,7 @@ class ManejadorDientes {
 
         
         else {
-          console.log(HOLA soy el diente + label);
+          console.log("HOLA soy el diente" + label);
           nuevaImagen.style.position = 'absolute';
             if(label == 29 || label == 28 || label == 27 || label == 26){
               nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
