@@ -370,12 +370,23 @@ class ManejadorDientes {
         nuevaImagen.classList.add('vestibular');
         var selector = '.diente[label="' + label + '"]';
         var diente = document.querySelector(selector);
+        
 
         var rectangulos = diente.getClientRects();
         var dimensiones = diente.getBoundingClientRect();
         var puntoCentralX = rectangulos[0].left;
         var puntoCentralY = rectangulos[0].top;
-        nuevaImagen.src = '/DIENTES CORTADOS/BOTONW.png';
+
+
+        if (label <= 16 ){
+
+          nuevaImagen.src = '/DIENTES CORTADOS/BOTONVESTARRIBA.png';
+        }
+        else {
+          nuevaImagen.src = '/DIENTES CORTADOS/BOTONVESTABAJO.png';
+
+
+        }
         nuevaImagen.style.position = 'absolute';
         nuevaImagen.style.left = puntoCentralX + dimensiones.width / 2.5 + 'px';
         nuevaImagen.style.top = puntoCentralY + dimensiones.height / 2.5 + 'px';
