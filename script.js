@@ -166,9 +166,9 @@ class ManejadorDientes {
     logoWonders.src = '/DIENTES CORTADOS/wonderslogoVERDE.png';
 
     logoWonders.style.position = 'absolute';
-    logoWonders.style.marginLeft = '10%';
+    logoWonders.style.marginLeft = '1%';
     logoWonders.style.marginTop = '25%';
-    logoWonders.style.width = '210px'
+    logoWonders.style.width = '250px'
     logoWonders.style.height = '68px'
     canvasContainer.appendChild(logoWonders);
 
