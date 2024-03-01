@@ -382,18 +382,19 @@ class ManejadorDientes {
         if (label <= 16 ){
           nuevaImagen.style.position = 'absolute';
             if(label == 4 || label == 5 || label == 6 || label == 7){
-              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)) + 'px';
-
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
+              nuevaImagen.style.width = '20px';
+              nuevaImagen.style.height = '10px';
 
               }else {
               nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
-
+              nuevaImagen.style.width = '40px';
+              nuevaImagen.style.height = '20px';
               }
             nuevaImagen.style.top = puntoCentralY  + medidasDientes[label] +'px';
             nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA.png';
             nuevaImagen.style.cursor = 'pointer';
-            nuevaImagen.style.width = '40px';
-            nuevaImagen.style.height = '20px';
+
           
         
             this.enviarMensajeAUsuario('BOTON AÑADIDO CON EXITO');
