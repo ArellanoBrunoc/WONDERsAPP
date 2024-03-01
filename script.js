@@ -320,7 +320,7 @@ class ManejadorDientes {
   }
 
   añadirAtacheORemover(accion) {
-    const medidasDientes = [0,31,29,32,38.5,32,27,32,15];
+    const medidasDientes = [0,31,29,32,38.5,32,27,32,15,15,32,27,32,38.5,32,29,31];
     const canvasContainer = document.getElementById('canvasContainer');
 
     console.log(this.arraySeleccionado + "para ataches");
@@ -401,25 +401,58 @@ class ManejadorDientes {
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA4567.png';
                 }
 
-              }else {
+              }else if(label <= 8){
               nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
               nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA.png';
+              }else if (label == 13 || label == 12 || label == 11 || label == 10){
+                nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
+                if(label==13 ){
+
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA5.png';
+                }
+                if(label == 10){
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA47.png';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                }else if (label == 11){
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA5.png';
+
+                }else {
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA4567.png';
+                }
+
               }
+
+
+
+
+
+
+
+
 
 
 
               nuevaImagen.style.width = '40px';
 
-              if ( label == 7){
+              if ( label == 7||label== 10){
                 nuevaImagen.style.height = '10px';
 
-              }else if (label == 4 ||label == 5){
+              }else if (label == 4 ||label == 5 || label == 13 || label == 12){
 
                 nuevaImagen.style.height = '12px';
-              }else {
+              }else{
                 nuevaImagen.style.height = '20px';
 
               }
+
+
+
+
+
+
+
+
 
 
 
