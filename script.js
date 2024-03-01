@@ -389,7 +389,7 @@ class ManejadorDientes {
         }
         nuevaImagen.style.position = 'absolute';
         nuevaImagen.style.left = puntoCentralX + dimensiones.width / 2.5-40 + 'px';
-        nuevaImagen.style.top = puntoCentralY + dimensiones.height + 'px';
+        nuevaImagen.style.top = puntoCentralY + dimensiones.height / 2.5 -60+ 'px';
         nuevaImagen.style.cursor = 'pointer';
         nuevaImagen.style.width = "60px";
         nuevaImagen.style.height = "80px";
