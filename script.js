@@ -382,9 +382,9 @@ class ManejadorDientes {
         if (label <= 16 ){
           nuevaImagen.style.position = 'absolute';
             if(label == 4 || label == 5 || label == 6 || label == 7){
-              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
 
-                if(label==5){
+                if(label==4){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA5.png';
                   
                 }else{
