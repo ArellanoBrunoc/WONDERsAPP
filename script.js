@@ -321,7 +321,7 @@ class ManejadorDientes {
 
   añadirAtacheORemover(accion) {
     const medidasDientes = [0,31,29,32,38.5,32,27,32,15,15,32,27,32,38.5,32,29,31];
-    const medidasDientes2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,30, 37, 36, 33, 29, 30,35,35,30,29,33,26,27,30,36]
+    const medidasDientes2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,30, 37, 36, 33, 29, 30,35,35,30,29,33,26,19,30,36]
       
     const canvasContainer = document.getElementById('canvasContainer');
 
@@ -483,7 +483,7 @@ class ManejadorDientes {
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO5.png';
                 }
                 if(label == 21){
-                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO47.png';
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO5.png';
                   nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
                 }else if (label == 22){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO5.png';
@@ -504,7 +504,7 @@ class ManejadorDientes {
                   nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
                 }
                 if(label == 27){
-                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO47.png';
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO5.png';
                   nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-11) + 'px';
                 }else if (label == 28){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO5.png';
@@ -531,7 +531,7 @@ class ManejadorDientes {
               if ( label == 26||label== 23){
                 nuevaImagen.style.height = '10px';
 
-              }else if (label == 29||label == 28 || label == 21 || label == 20){
+              }else if (label == 20||label == 21 || label == 27 || label == 28){
 
                 nuevaImagen.style.height = '12px';
               }else{
