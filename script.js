@@ -493,7 +493,7 @@ class ManejadorDientes {
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO4567.png';
                 }
 
-              }else if(label <= 23){
+              }else if(label <= 23 || label ==24 == label>= 30)  {
               nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
               nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO.png';
               }else if (label == 29 || label == 28 || label == 27 || label == 26){
