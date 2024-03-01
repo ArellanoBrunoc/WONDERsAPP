@@ -321,7 +321,7 @@ class ManejadorDientes {
 
   añadirAtacheORemover(accion) {
     const medidasDientes = [0,31,29,32,38.5,32,27,32,15,15,32,27,32,38.5,32,29,31];
-    const medidasDientes2 = [0,34,30, 37, 29, 33, 29, 30,35,35,30,29,29,36,35,30,34];
+    const medidasDientes2 = [0,34,30, 37, 29, 29, 29, 30,35,35,30,29,29,36,35,30,34];
       
     const canvasContainer = document.getElementById('canvasContainer');
 
@@ -479,7 +479,7 @@ class ManejadorDientes {
             if(label == 20 || label == 21 || label == 22 || label == 23){
               nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
                 if(label==20 ){
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-9) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-7) + 'px';
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO5.png';
                 }
                 if(label == 21){
