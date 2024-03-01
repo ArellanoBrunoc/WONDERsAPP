@@ -321,7 +321,7 @@ class ManejadorDientes {
 
   añadirAtacheORemover(accion) {
     const medidasDientes = [0,31,29,32,38.5,32,27,32,15,15,32,27,32,38.5,32,29,31];
-    const medidasDientes2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,30, 37, 36, 33, 29, 30,35,35,30,29,33,26,0,30,36]
+    const medidasDientes2 = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,36,30, 37, 36, 33, 29, 30,35,35,30,29,33,26,0,30,36]
       
     const canvasContainer = document.getElementById('canvasContainer');
 
