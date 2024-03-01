@@ -320,7 +320,7 @@ class ManejadorDientes {
   }
 
   añadirAtacheORemover(accion) {
-    const medidasDientes = [0,31,29,32,38.5,32,25,29,15];
+    const medidasDientes = [0,31,29,32,38.5,32,25,32,15];
     const canvasContainer = document.getElementById('canvasContainer');
 
     console.log(this.arraySeleccionado + "para ataches");
@@ -338,8 +338,8 @@ class ManejadorDientes {
         var puntoCentralY = rectangulos[0].top;
         nuevaImagen.src = '/DIENTES CORTADOS/atache.png';
         nuevaImagen.style.position = 'absolute';
-        nuevaImagen.style.left = puntoCentralX + dimensiones.width / 2.5 + 10+'px';
-        nuevaImagen.style.top = puntoCentralY + dimensiones.height / 2.5 + 'px';
+        nuevaImagen.style.left = puntoCentralX + dimensiones.width / 2.5 +'px';
+        nuevaImagen.style.top = puntoCentralY + dimensiones.height / 2.5 +10+ 'px';
         nuevaImagen.style.cursor = 'pointer';
         nuevaImagen.style.width = '15px';
         nuevaImagen.style.height = '15px';
@@ -387,7 +387,7 @@ class ManejadorDientes {
             if(label == 4 || label == 5 || label == 6 || label == 7){
               nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
 
-                if(label==4){
+                if(label==4|| label == 7){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA5.png';
                   
                 }else{
@@ -413,10 +413,7 @@ class ManejadorDientes {
             this.enviarMensajeAUsuario('BOTON AÑADIDO CON EXITO');
 
 
-
-
-
-                      }
+}
 
 
         
