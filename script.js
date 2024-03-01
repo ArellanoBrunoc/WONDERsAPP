@@ -320,7 +320,7 @@ class ManejadorDientes {
   }
 
   añadirAtacheORemover(accion) {
-    const medidasDientes = [0,31,29,32,38.5,32,25,32,15];
+    const medidasDientes = [0,31,29,32,38.5,32,27,32,15];
     const canvasContainer = document.getElementById('canvasContainer');
 
     console.log(this.arraySeleccionado + "para ataches");
@@ -394,6 +394,7 @@ class ManejadorDientes {
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA5.png';
 
                 }else {
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA4567.png';
                 }
 
