@@ -317,7 +317,7 @@ class ManejadorDientes {
   }
 
   añadirAtacheORemover(accion) {
-    const medidasDientes = [0,29,27,30,33,27,21,23,10];
+    const medidasDientes = [0,31,29,32,33,27,21,23,15];
     const canvasContainer = document.getElementById('canvasContainer');
 
     console.log(this.arraySeleccionado + "para ataches");
@@ -338,8 +338,8 @@ class ManejadorDientes {
         nuevaImagen.style.left = puntoCentralX + dimensiones.width / 2.5 + 'px';
         nuevaImagen.style.top = puntoCentralY + dimensiones.height / 2.5 + 'px';
         nuevaImagen.style.cursor = 'pointer';
-        nuevaImagen.style.width = '20px';
-        nuevaImagen.style.height = '20px';
+        nuevaImagen.style.width = '15px';
+        nuevaImagen.style.height = '15px';
         canvasContainer.appendChild(nuevaImagen);
         this.enviarMensajeAUsuario('ATACHES AÑADIDOS CON EXITO');
       });
@@ -402,9 +402,6 @@ class ManejadorDientes {
 
 
 
-
-
-         
                       }
 
 
