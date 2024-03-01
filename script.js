@@ -540,7 +540,11 @@ class ManejadorDientes {
               }
 
 
+              if(label== 27 || label == 22){
+                nuevaImagen.style.height = '12px';
 
+
+              }
 
 
 
