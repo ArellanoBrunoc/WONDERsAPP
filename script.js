@@ -406,7 +406,18 @@ class ManejadorDientes {
 
 
               nuevaImagen.style.width = '40px';
-              nuevaImagen.style.height = '20px';
+
+              if (label == 4 || lavel == 7){
+                nuevaImagen.style.height = '10px';
+
+              }else {
+
+                nuevaImagen.style.height = '20px';
+              }
+
+
+
+
             nuevaImagen.style.top = puntoCentralY  + medidasDientes[label] +'px';
 
             nuevaImagen.style.cursor = 'pointer';
