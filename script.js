@@ -158,8 +158,8 @@ class ManejadorDientes {
     logoWonders.style.position = 'absolute';
     logoWonders.style.marginLeft = '0%';
     logoWonders.style.marginTop = '25%';
-    logoWonders.style.width = '300px'
-    logoWonders.style.height = '100px'
+    logoWonders.style.width = '200px'
+    logoWonders.style.height = '68px'
     canvasContainer.appendChild(logoWonders);
 
 
