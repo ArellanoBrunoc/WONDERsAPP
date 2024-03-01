@@ -29,7 +29,7 @@ class ManejadorDientes {
 
 
     botonPalatino.addEventListener('click', () => this.añadirAtacheORemover('palatino'));
-    botonVest.addEventListener('click', () => this.añadirAtacheORemover('vestibular'));
+    botonVest.addEventListener('click', () => this.añadirAtacheORemover('botonvestibular'));
     botonAtache.addEventListener('click', () => this.añadirAtacheORemover('atache'));
     botonRemover.addEventListener('click', () => this.añadirAtacheORemover('remover'));
     botonReset.addEventListener('click', () => this.reloadApp());
