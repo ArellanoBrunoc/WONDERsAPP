@@ -26,7 +26,7 @@ class ManejadorDientes {
     const botonPalatino = document.getElementById('palatino');
     const botonVest = document.getElementById('vestibular');
     const medidasBoton = [30,17];
-    const medidasDientes = [0,31,29,32,37,30,24,43,13];
+    
 
     botonPalatino.addEventListener('click', () => this.añadirAtacheORemover('palatino'));
     botonVest.addEventListener('click', () => this.añadirAtacheORemover('botonvestibular'));
@@ -317,6 +317,7 @@ class ManejadorDientes {
   }
 
   añadirAtacheORemover(accion) {
+    const medidasDientes = [0,31,29,32,37,30,24,43,13];
     const canvasContainer = document.getElementById('canvasContainer');
 
     console.log(this.arraySeleccionado + "para ataches");
