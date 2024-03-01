@@ -389,10 +389,10 @@ class ManejadorDientes {
         }
         nuevaImagen.style.position = 'absolute';
         nuevaImagen.style.left = puntoCentralX + dimensiones.width / 2.5 + 'px';
-        nuevaImagen.style.top = puntoCentralY + dimensiones.height +20+ 'px';
+        nuevaImagen.style.top = puntoCentralY + dimensiones.height + 'px';
         nuevaImagen.style.cursor = 'pointer';
         nuevaImagen.style.width = "60px";
-        nuevaImagen.style.height = "100px";
+        nuevaImagen.style.height = "80px";
         canvasContainer.appendChild(nuevaImagen);
         this.enviarMensajeAUsuario('BOTON AÑADIDO CON EXITO');
       });
