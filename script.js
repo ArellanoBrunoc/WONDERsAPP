@@ -382,9 +382,13 @@ class ManejadorDientes {
         if (label <= 16 ){
           nuevaImagen.style.position = 'absolute';
             if(label == 4 || label == 5 || label == 6 || label == 7){
-              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-5) + 'px';
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
               nuevaImagen.style.width = '33px';
               nuevaImagen.style.height = '27px';
+                if(label==6){
+                  nuevaImagen.style.height = '22px';
+                  
+                }
 
               }else {
               nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
