@@ -476,16 +476,16 @@ class ManejadorDientes {
         else {
           console.log("HOLA soy el diente" + label);
           nuevaImagen.style.position = 'absolute';
-            if(label == 29 || label == 28 || label == 27 || label == 26){
+            if(label == 20 || label == 21 || label == 22 || label == 23){
               nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
-                if(label==29 ){
+                if(label==20 ){
 
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO5.png';
                 }
-                if(label == 26){
+                if(label == 21){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO47.png';
                   nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
-                }else if (label == 28){
+                }else if (label == 22){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO5.png';
 
                 }else {
@@ -493,20 +493,20 @@ class ManejadorDientes {
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO4567.png';
                 }
 
-              }else if(label >= 25 || label == 24|| label >=19 || label== 17||label==18){
+              }else if(label <= 23){
               nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
               nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO.png';
-              }else if (label == 20 || label == 21 || label == 22 || label == 23){
+              }else if (label == 29 || label == 28 || label == 27 || label == 26){
                 nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
-                if(label==20 ){
+                if(label==29 ){
 
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO5.png';
                   nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
                 }
-                if(label == 23){
+                if(label == 27){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO47.png';
                   nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-11) + 'px';
-                }else if (label == 21){
+                }else if (label == 28){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONABAJO5.png';
                   nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
                 }else {
