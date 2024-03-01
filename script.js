@@ -387,12 +387,14 @@ class ManejadorDientes {
             if(label == 4 || label == 5 || label == 6 || label == 7){
               nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
 
-                if(label==4|| label == 7){
+                if(label==4 ){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA5.png';
                   
-                }else{
-                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA4567.png';
+                }else if (label == 7){
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA7.png';
 
+                }else {
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONARRIBA4567.png';
                 }
 
               }else {
