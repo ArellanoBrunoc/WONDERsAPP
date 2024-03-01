@@ -25,8 +25,8 @@ class ManejadorDientes {
     const botonReset = document.getElementById('reset');
     const botonPalatino = document.getElementById('palatino');
     const botonVest = document.getElementById('vestibular');
-
-
+    const medidasBoton = [30,17];
+    const medidasDientes = [0,31,29,32,37,30,24,43,13];
 
     botonPalatino.addEventListener('click', () => this.añadirAtacheORemover('palatino'));
     botonVest.addEventListener('click', () => this.añadirAtacheORemover('botonvestibular'));
@@ -389,7 +389,7 @@ class ManejadorDientes {
         }
         nuevaImagen.style.position = 'absolute';
         nuevaImagen.style.left = puntoCentralX + dimensiones.width / 2.5 + 'px';
-        nuevaImagen.style.top = puntoCentralY + dimensiones.height / 2.5 + 'px';
+        nuevaImagen.style.top = puntoCentralY  + 'px';
         nuevaImagen.style.cursor = 'pointer';
         nuevaImagen.style.width = '20px';
         nuevaImagen.style.height = '20px';
