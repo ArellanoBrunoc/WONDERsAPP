@@ -23,6 +23,13 @@ class ManejadorDientes {
     const botonAtache = document.getElementById('atache');
     const botonRemover = document.getElementById('remover');
     const botonReset = document.getElementById('reset');
+    const botonPalatino = document.getElementById('palatino');
+    const botonVest = document.getElementById('vestibular');
+
+
+
+    botonPalatino.addEventListener('click', () => this.añadirAtacheORemover('palatino'));
+    botonVest.addEventListener('click', () => this.añadirAtacheORemover('vestibular'));
     botonAtache.addEventListener('click', () => this.añadirAtacheORemover('atache'));
     botonRemover.addEventListener('click', () => this.añadirAtacheORemover('remover'));
     botonReset.addEventListener('click', () => this.reloadApp());
@@ -335,7 +342,7 @@ class ManejadorDientes {
         canvasContainer.appendChild(nuevaImagen);
         this.enviarMensajeAUsuario('ATACHES AÑADIDOS CON EXITO');
       });
-    } else {
+    } else if(accion == "remover") {
       this.arraySeleccionado.forEach((label) => {
         var nuevaImagen = document.createElement('img');
         nuevaImagen.classList.add('linea');
@@ -356,6 +363,18 @@ class ManejadorDientes {
         canvasContainer.appendChild(nuevaImagen);
         this.enviarMensajeAUsuario('DIENTES REMOVIDOS CON EXITO');
       });
+
+    }else if(accion == "botonvestibular"){
+
+
+
+
+
+
+    }else if (accion == "botonpalatino"){
+
+
+
 
     }
 
