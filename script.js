@@ -689,7 +689,7 @@ class ManejadorDientes {
                 nuevaImagen.style.top = puntoCentralY  + medidasDientes[label] -2+'px';
 
               }
-            }else{
+            else{
               nuevaImagen.style.top = puntoCentralY  + medidasDientes[label]+'px';
 
             }
