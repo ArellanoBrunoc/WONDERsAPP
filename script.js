@@ -783,13 +783,13 @@ class ManejadorDientes {
 
               }
               if ( label== 24 || label == 25){
-                nuevaImagen.style.height = '14px';
-                nuevaImagen.style.width = '30px';
+                nuevaImagen.style.height = '12px';
+                nuevaImagen.style.width = '25px';
               }
 
 
 
-              if(label== 17||label==17||label==19||label==30||label==31 ||label==32){
+              if(label== 17||label==18||label==19||label==30||label==31 ||label==32){
                 nuevaImagen.style.height = '15px';
                 nuevaImagen.style.width = '30px'; 
               }
