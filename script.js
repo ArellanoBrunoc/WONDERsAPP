@@ -682,8 +682,13 @@ class ManejadorDientes {
 
 
 
-            if (label == 4 || label == 5||label== 12||label == 13 || label== 7||label==10){
+            if (label== 7||label==10){
               nuevaImagen.style.top = puntoCentralY  + medidasDientes[label] -5+'px';
+            }
+              else if(label == 4 || label == 5||label== 12||label == 13 ){
+                nuevaImagen.style.top = puntoCentralY  + medidasDientes[label] -2+'px';
+
+              }
             }else{
               nuevaImagen.style.top = puntoCentralY  + medidasDientes[label]+'px';
 
@@ -707,40 +712,40 @@ class ManejadorDientes {
           console.log("HOLA soy el diente" + label);
           nuevaImagen.style.position = 'absolute';
             if(label == 20 || label == 21 || label == 22 || label == 23){
-              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-7) + 'px';
                 if(label==20 ){
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-7) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONPABAJO.png';
                 }
                 if(label == 21){
                   nuevaImagen.src =  '/DIENTES CORTADOS/BOTONPABAJO.png';
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-9) + 'px';
                 }else if (label == 22){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONPABAJO.png';
 
                 }else {
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-9) + 'px';
                   nuevaImagen.src =  '/DIENTES CORTADOS/BOTONPABAJO.png';
                 }
 
               }else if(label <= 24 || label ==25 || label>= 30)  {
-              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-5) + 'px';
               nuevaImagen.src = '/DIENTES CORTADOS/BOTONPABAJO.png';
               }else if (label == 29 || label == 28 || label == 27 || label == 26){
-                nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
+                nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-7) + 'px';
                 if(label==29 ){
 
                   nuevaImagen.src =  '/DIENTES CORTADOS/BOTONPABAJO.png';
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)+3) + 'px';
                 }
                 if(label == 27){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONPABAJO.png';
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-15) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
                 }else if (label == 28){
                   nuevaImagen.src =  '/DIENTES CORTADOS/BOTONPABAJO.png';
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-5) + 'px';
                 }else {
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-13) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-8) + 'px';
                   nuevaImagen.src =  '/DIENTES CORTADOS/BOTONPABAJO.png';
                 }
 
@@ -756,7 +761,7 @@ class ManejadorDientes {
 
 
 
-              nuevaImagen.style.width = '40px';
+              nuevaImagen.style.width = '30px';
 
               if ( label == 26||label== 23){
                 nuevaImagen.style.height = '10px';
