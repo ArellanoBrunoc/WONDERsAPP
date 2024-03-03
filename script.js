@@ -785,6 +785,7 @@ class ManejadorDientes {
               if ( label== 24 || label == 25){
                 nuevaImagen.style.height = '12px';
                 nuevaImagen.style.width = '25px';
+                nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-7) + 'px';
               }
 
 
