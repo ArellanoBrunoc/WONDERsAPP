@@ -782,7 +782,7 @@ class ManejadorDientes {
 
 
 
-            nuevaImagen.style.top = puntoCentralY  + 110-medidasDientes2[label-22]+'px';
+            nuevaImagen.style.top = puntoCentralY  + 110-medidasDientes2[label-16]-5+'px';
 
             nuevaImagen.style.cursor = 'pointer';
 
