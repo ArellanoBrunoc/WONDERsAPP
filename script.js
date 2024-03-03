@@ -28,7 +28,7 @@ class ManejadorDientes {
     const medidasBoton = [30,17];
     
 
-    botonPalatino.addEventListener('click', () => this.añadirAtacheORemover('palatino'));
+    botonPalatino.addEventListener('click', () => this.añadirAtacheORemover('botonpalatino'));
     botonVest.addEventListener('click', () => this.añadirAtacheORemover('botonvestibular'));
     botonAtache.addEventListener('click', () => this.añadirAtacheORemover('atache'));
     botonRemover.addEventListener('click', () => this.añadirAtacheORemover('remover'));
@@ -572,73 +572,6 @@ class ManejadorDientes {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
         canvasContainer.appendChild(nuevaImagen);
 
@@ -663,6 +596,219 @@ class ManejadorDientes {
     
     
     else if (accion == "botonpalatino"){
+      this.arraySeleccionado.forEach((label) => {
+        var nuevaImagen = document.createElement('img');
+        nuevaImagen.classList.add('vestibular');
+        var selector = '.diente[label="' + label + '"]';
+        var diente = document.querySelector(selector);
+        
+
+        var rectangulos = diente.getClientRects();
+        var dimensiones = diente.getBoundingClientRect();
+        var puntoCentralX = rectangulos[0].left;
+        var puntoCentralY = rectangulos[0].top;
+
+
+        if (label <= 16 ){
+          nuevaImagen.style.position = 'absolute';
+            if(label == 4 || label == 5 || label == 6 || label == 7){
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
+                if(label==4 ){
+
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
+                }
+                if(label == 7){
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                }else if (label == 5){
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
+
+                }else {
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
+                }
+
+              }else if(label <= 8 || label == 9|| label >=14){
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
+              nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
+              }else if (label == 13 || label == 12 || label == 11 || label == 10){
+                nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
+                if(label==13 ){
+
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
+                }
+                if(label == 10){
+                  nuevaImagen.src ='/DIENTES CORTADOS/BOTONPARRIBA.png';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-11) + 'px';
+                }else if (label == 12){
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
+                }else {
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-11) + 'px';
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
+                }
+
+              }
+
+
+
+
+
+
+
+
+
+
+
+              nuevaImagen.style.width = '40px';
+
+              if ( label == 7||label== 10){
+                nuevaImagen.style.height = '10px';
+
+              }else if (label == 4 ||label == 5 || label == 13 || label == 12){
+
+                nuevaImagen.style.height = '12px';
+              }else{
+                nuevaImagen.style.height = '20px';
+
+              }
+
+
+
+
+
+
+
+
+
+
+
+
+            nuevaImagen.style.top = puntoCentralY  + medidasDientes[label] +'px';
+
+            nuevaImagen.style.cursor = 'pointer';
+
+          
+        
+            this.enviarMensajeAUsuario('BOTON AÑADIDO CON EXITO');
+
+
+}
+
+
+        
+        else {
+          console.log("HOLA soy el diente" + label);
+          nuevaImagen.style.position = 'absolute';
+            if(label == 20 || label == 21 || label == 22 || label == 23){
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
+                if(label==20 ){
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-7) + 'px';
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONPABAJO.png';
+                }
+                if(label == 21){
+                  nuevaImagen.src =  '/DIENTES CORTADOS/BOTONPABAJO.png';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                }else if (label == 22){
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONPABAJO.png';
+
+                }else {
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                  nuevaImagen.src =  '/DIENTES CORTADOS/BOTONPABAJO.png';
+                }
+
+              }else if(label <= 24 || label ==25 || label>= 30)  {
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
+              nuevaImagen.src = '/DIENTES CORTADOS/BOTONPABAJO.png';
+              }else if (label == 29 || label == 28 || label == 27 || label == 26){
+                nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
+                if(label==29 ){
+
+                  nuevaImagen.src =  '/DIENTES CORTADOS/BOTONPABAJO.png';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
+                }
+                if(label == 27){
+                  nuevaImagen.src = '/DIENTES CORTADOS/BOTONPABAJO.png';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-15) + 'px';
+                }else if (label == 28){
+                  nuevaImagen.src =  '/DIENTES CORTADOS/BOTONPABAJO.png';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
+                }else {
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-13) + 'px';
+                  nuevaImagen.src =  '/DIENTES CORTADOS/BOTONPABAJO.png';
+                }
+
+              }
+
+
+
+
+
+
+
+
+
+
+
+              nuevaImagen.style.width = '40px';
+
+              if ( label == 26||label== 23){
+                nuevaImagen.style.height = '10px';
+
+              }else if (label == 21 || label == 28){
+
+                nuevaImagen.style.height = '12px';
+              }else{
+                nuevaImagen.style.height = '20px';
+
+              }
+
+
+              if(label== 27 || label == 22 || label == 20 || label == 29){
+                nuevaImagen.style.height = '12px';
+
+
+              }
+              if ( label== 24 || label == 25){
+                nuevaImagen.style.height = '16px';
+                nuevaImagen.style.width = '32px';
+              }
+
+
+
+
+
+
+
+
+            nuevaImagen.style.top = puntoCentralY  + 110-medidasDientes2[label-16]+'px';
+
+            nuevaImagen.style.cursor = 'pointer';
+
+          
+        
+            this.enviarMensajeAUsuario('BOTON AÑADIDO CON EXITO');
+
+
+
+
+
+
+
+
+        }
+        canvasContainer.appendChild(nuevaImagen);
+
+
+
+
+      });
+
+
+
+
+
 
 
 
