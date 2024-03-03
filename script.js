@@ -661,7 +661,7 @@ class ManejadorDientes {
 
 
 
-              nuevaImagen.style.width = '40px';
+              nuevaImagen.style.width = '30px';
 
               if ( label == 7||label== 10){
                 nuevaImagen.style.height = '10px';
@@ -782,7 +782,7 @@ class ManejadorDientes {
 
 
 
-            nuevaImagen.style.top = puntoCentralY  + 110-medidasDientes2[label-16]+'px';
+            nuevaImagen.style.top = puntoCentralY  + 110-medidasDientes2[label-22]+'px';
 
             nuevaImagen.style.cursor = 'pointer';
 
