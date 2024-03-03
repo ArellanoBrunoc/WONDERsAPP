@@ -682,10 +682,15 @@ class ManejadorDientes {
 
 
 
+            if (label == 4 || label == 5||label== 12||label == 13 || label== 7||label==10){
+              nuevaImagen.style.top = puntoCentralY  + medidasDientes[label] -5+'px';
+            }else{
+              nuevaImagen.style.top = puntoCentralY  + medidasDientes[label]+'px';
+
+            }
 
 
 
-            nuevaImagen.style.top = puntoCentralY  + medidasDientes[label] -5+'px';
 
             nuevaImagen.style.cursor = 'pointer';
 
