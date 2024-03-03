@@ -612,40 +612,40 @@ class ManejadorDientes {
         if (label <= 16 ){
           nuevaImagen.style.position = 'absolute';
             if(label == 4 || label == 5 || label == 6 || label == 7){
-              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-7) + 'px';
                 if(label==4 ){
 
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
                 }
                 if(label == 7){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-9) + 'px';
                 }else if (label == 5){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
 
                 }else {
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-14) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-9) + 'px';
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
                 }
 
               }else if(label <= 8 || label == 9|| label >=14){
-              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
+              nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-5) + 'px';
               nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
               }else if (label == 13 || label == 12 || label == 11 || label == 10){
-                nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-12) + 'px';
+                nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-7) + 'px';
                 if(label==13 ){
 
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-2) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)+3) + 'px';
                 }
                 if(label == 10){
                   nuevaImagen.src ='/DIENTES CORTADOS/BOTONPARRIBA.png';
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-11) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-6) + 'px';
                 }else if (label == 12){
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-10) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-5) + 'px';
                 }else {
-                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-11) + 'px';
+                  nuevaImagen.style.left = puntoCentralX + ((dimensiones.width / 2.5)-6) + 'px';
                   nuevaImagen.src = '/DIENTES CORTADOS/BOTONPARRIBA.png';
                 }
 
@@ -664,13 +664,13 @@ class ManejadorDientes {
               nuevaImagen.style.width = '30px';
 
               if ( label == 7||label== 10){
-                nuevaImagen.style.height = '10px';
+                nuevaImagen.style.height = '5px';
 
               }else if (label == 4 ||label == 5 || label == 13 || label == 12){
 
-                nuevaImagen.style.height = '12px';
+                nuevaImagen.style.height = '6px';
               }else{
-                nuevaImagen.style.height = '20px';
+                nuevaImagen.style.height = '10px';
 
               }
 
