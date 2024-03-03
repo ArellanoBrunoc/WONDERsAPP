@@ -133,6 +133,7 @@ class ManejadorDientes {
     const lineas = document.querySelectorAll('.linea');
     const numeros = document.querySelectorAll('.numeros');
     const botones = document.querySelectorAll('.vestibular');
+    const botones2 = document.querySelectorAll('.palatino');
     lineas.forEach(linea => {
       linea.addEventListener('click', (event) => this.eliminacionLineasYNumeros(event));
     });
@@ -140,6 +141,9 @@ class ManejadorDientes {
       numero.addEventListener('click', (event) => this.eliminacionLineasYNumeros(event));
     });
     botones.forEach(boton => {
+      boton.addEventListener('click', (event) => this.eliminacionLineasYNumeros(event));
+    });
+    botones2.forEach(boton => {
       boton.addEventListener('click', (event) => this.eliminacionLineasYNumeros(event));
     });
 
@@ -598,7 +602,7 @@ class ManejadorDientes {
     else if (accion == "botonpalatino"){
       this.arraySeleccionado.forEach((label) => {
         var nuevaImagen = document.createElement('img');
-        nuevaImagen.classList.add('vestibular');
+        nuevaImagen.classList.add('palatino');
         var selector = '.diente[label="' + label + '"]';
         var diente = document.querySelector(selector);
         
@@ -759,8 +763,6 @@ class ManejadorDientes {
 
 
 
-
-
               nuevaImagen.style.width = '30px';
 
               if ( label == 26||label== 23){
@@ -781,13 +783,16 @@ class ManejadorDientes {
 
               }
               if ( label== 24 || label == 25){
-                nuevaImagen.style.height = '16px';
-                nuevaImagen.style.width = '32px';
+                nuevaImagen.style.height = '14px';
+                nuevaImagen.style.width = '30px';
               }
 
 
 
-
+              if(label== 17||label==17||label==19||label==30||label==31 ||label==32){
+                nuevaImagen.style.height = '15px';
+                nuevaImagen.style.width = '30px'; 
+              }
 
 
 
